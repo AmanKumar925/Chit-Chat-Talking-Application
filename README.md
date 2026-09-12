@@ -53,11 +53,11 @@ The app is designed around a scalable Firebase backend paired with Amazon S3 for
 
 | Home Feed | Post Details | Create Post |
 |:---:|:---:|:---:|
-| ![Home Feed](screenshots/5.jpeg) | ![Post Details](screenshots/7.jpeg) | ![Create Post](screenshots/9.jpeg) |
+| <img src="screenshots/5.jpeg" width="220"/> | <img src="screenshots/7.jpeg" width="220"/> | <img src="screenshots/9.jpeg" width="220"/> |
 
 | Comments | Login / Auth |
 |:---:|:---:|
-| ![Comments](screenshots/8.jpeg) | ![Login](screenshots/1.jpeg) |
+| <img src="screenshots/8.jpeg" width="220"/> | <img src="screenshots/1.jpeg" width="220"/> |
 
 </div>
 
