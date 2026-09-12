@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="whiteTransparentHalf">#80ffffff</color>
+
+    <color name="likeBtnGray">#ffffff</color>
+    <color name="likeBtnAccent">#ffffff</color>
+    <color name="matteblack">#28282B</color>
+    <color name="purewhite">#ffffff</color>
+</resources>

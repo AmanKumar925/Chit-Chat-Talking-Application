@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comments_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".CommentsActivity">
+
+    <!-- Status bar space -->
+    <View
+        android:id="@+id/status_bar_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white" />
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Comments heading -->
+    <TextView
+        android:id="@+id/comment_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="Comments :"
+        android:textColor="@color/matteblack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Comments list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:overScrollMode="ifContentScrolls" />
+
+    <!-- Bottom comment area -->
+    <LinearLayout
+        android:id="@+id/comment_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+        <!-- Comment field -->
+        <EditText
+            android:id="@+id/comment_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:maxHeight="120dp"
+            android:gravity="center_vertical"
+            android:hint="Your Comment here ..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="4"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/matteblack"
+            android:textColorHint="#888888"
+            android:textSize="15sp" />
+
+        <!-- Send button -->
+        <ImageView
+            android:id="@+id/comment_post_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="Post comment"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/post_comment_icon"
+            app:tint="@color/matteblack" />
+
+    </LinearLayout>
+
+</LinearLayout>
